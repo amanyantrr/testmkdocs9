@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>HW SW FAQ</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> HW SW FAQ</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Home</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#hw-sw-faq">HW SW FAQ</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">HW SW FAQ</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hw-sw-faq">HW SW FAQ</h1>
+<ul>
+<li><strong>How to use the modem on this cape for establishing data connection?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to Application notes for configuring Cape for first time use and configuring for data connection using PPP/wvdial in debian wheezy or Angstrom.</p>
+<ul>
+<li><strong>How to use the GPS module on this cape ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to the Application note for 
+<a href="https://amanyantrr.github.io/testmkdocs8/">GPS Location and NTP Synchronization.</a></p>
+<ul>
+<li><strong>What are various applications of having GPS module on this cape? How can I use them ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to the Application note for 
+<a href="https://amanyantrr.github.io/testmkdocs8/">GPS Location and NTP Synchronization.</a></p>
+<ul>
+<li><strong>How to set the PPP settings for a service provider ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to Application note for Configuring for data connection using PPP/Wvdial in Debian Wheezy or Angstrom</p>
+<ul>
+<li><strong>How to use the modem wtih Wvdial ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to Application note for Configuring for data connection using Wvdial in Debian Wheezy or Angstrom</p>
+<ul>
+<li><strong>What all software patches do I need to use this cape ? Are there any images readily available to use it on the go ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> To use GPS Module completely, PPS drivers for GPIO enabled in kernel and NTP packages to be installed.</p>
+<p>To use Modem, Wvdial and/or PPP files need to configured for establishing PPP connection.</p>
+<p>All this is available in a Downloadable image for both Angstrom and Debian Wheezy as a normal SD card image or EMMC flasher image.</p>
+<p>Kernel patch files are also available for use with pre-existing Debian/Angstrom Images and steps for compiling kernel for these drivers and installing packages are provided here. Please refer to Application notes for more details.</p>
+<ul>
+<li><strong>Which all OS does the Cape support ? Can I use it with Android on Beaglebone Black ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> Currently Our Cape has full support on Debian Wheezy and Angstrom Linux. We are working to expand it for use with Android and other OS that Beaglebone Black supports.</p>
+<ul>
+<li><strong>Cape/Modem was not Powered off when I shut Beaglebone Black down by pressing Power button or executing shutdown command ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> When Beaglebone Black is shutdown with Power adapter still plugged in then Modem just resets and turns back on because it draws power directly from Power Adapter and not the PMIC on Beaglebone Black.</p>
+<p>So, usually when remotely shutting down Beaglebone Black, Turn off the Modem before that . Resetting Beagle bone Black resets the Modem in any case.</p>
+<p>GPS module simply turns off when Beaglebone Black is shutdown.</p>
+<ul>
+<li><strong>PPP is established, but I cannot access/login to Beaglebone Black over PPP IP ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> After establishing PPP connection and ensuring that it has been established properly, the Network Gateway on the Beaglebone black has to be switched from eth0 by default to the ppp0 .</p>
+<p>It can be done using following commands :</p>
+<pre><code>    GW=$(ip address show ppp0 | awk ‘/peer/ {print $4}’ | cut –d “/” –f1)
+
+    ip route replace default via $GW dev ppp0
+</code></pre>
+<p>You can simply replace the ‘GW’ by the Gateway ip for ppp0 too by looking from ifconfig output.</p>
+<p>Now, check status of gateway being changed from eth0 to ppp0 by</p>
+<pre><code>    netstat –arn
+</code></pre>
+<p>Similarly, you can reset back from ppp0 to eth0</p>
+<ul>
+<li><strong>What are the GPIOs for Resetting or turning ON/OFF the Modem and the GPS module?</strong></li>
+</ul>
+<p><strong>Ans:</strong> For turning the Modem On or Off, GPIO 45 is used. GPIO45 should be high by default.</p>
+<p>For Soft Resetting, cycle GPIO45 through OFF and then ON .</p>
+<p>For Hard Resetting the modem, GPIO 60 is used. GPIO60 should be high by default</p>
+<p>For Resetting the GPS module, GPIO50 is used. GPIO50 should be high by default.</p>
+<p>There is no ON/OFF control for GPS Module.</p>
+<p>Alternatively, push button switches can be used instead of GPIOs.</p>
+<p>Please refer to Application notes for more information.</p>
+<ul>
+<li><strong>At which port is GPS NMEA data coming?</strong></li>
+</ul>
+<p><strong>Ans :</strong> GPS NMEA data is coming at UART4 or /dev/ttyO4 .</p>
+<p>As a root user you can do the following :</p>
+<pre><code>    stty –F /dev/ttyO4 19200 raw
+
+    cat /dev/ttyO4
+</code></pre>
+<p>or see the data over minicom at ttyO4 port.</p>
+<ul>
+<li><strong>What are AT command settings for modem?</strong></li>
+</ul>
+<p><strong>Ans :</strong> There is a AT command set available for the Modems . They can be downloaded from here.</p>
+<p>AT command port for GPRS modem is /dev/ttyO1 at baud rate 115200 8N1.</p>
+<ul>
+<li><strong>How to know whether PPP has been established successfully?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to Application note for Configuring Data connection using Wvdial/PPP for more details.</p>
+<ul>
+<li><strong>How to see the NTP server data?</strong></li>
+</ul>
+<p><strong>Ans :</strong> After starting NTP server, its data can be seen by using following query command :</p>
+<pre><code>    ntpq –p
+</code></pre>
+<p>This would list all the peers that you have entered in your ntp.conf file.</p>
+<ul>
+<li><strong>How to check that pps input data is coming ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> PPS inut data from GPS module is coming at /dev/pps1 after it has got a Fix . As a root user, follow these commands :</p>
+<pre><code>    cd /usr/src/pps-tools
+
+    ./ppstest /dev/pps1
+</code></pre>
+<p>The output should be something like this for a valid pps input</p>
+<pre><code>    trying PPS source "/dev/pps1"
+
+    found PPS source "/dev/pps1"
+
+    ok, found 1 source(s), now start fetching data...
+
+    source 0 - assert 1392269685.015340936, sequence: 53 - clear 0.000000000, sequence: 0
+
+    source 0 - assert 1392269686.015346237, sequence: 54 - clear 0.000000000, sequence: 0
+
+    source 0 - assert 1392269687.015357137, sequence: 55 - clear 0.000000000, sequence: 0
+</code></pre>
+<ul>
+<li><strong>Can I use my own existing Debian image with this cape ? What extra files/software patches do I require to install?</strong></li>
+</ul>
+<p><strong>Ans:</strong> Yes, you can use your own Debian/Angstrom image with our cape. You will need to include the precompiled kernel patches available from here and copy in your image as directed and reboot with the new image. It is advised to backup your existing image before doing this.</p>
+<p>After applying kernel patches, follow application notes to configure the cape for establishing PPP connection or running a NTP server for time synchronization.</p>
+<ul>
+<li><strong>What is the exact process to Turn Modem On and off and reset it using On/off switch or SW GPIOs ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> For turning the modem On or Off , GPIO 45 is used. Following is the process how it has to be used :</p>
+<p>GPIO45 High, delay of 4 seconds, GPIO45 Low, delay of 4 seconds, GPIO45 High</p>
+<p>GPIO45 should be High by default.</p>
+<p>For soft resetting, cycle GPIO45 through OFF and then ON like following:</p>
+<p>GPIO45 High, delay of 4 seconds, GPIO45 Low, delay of 4 seconds , GPIO45 High, delay of 4 seconds, GPIO45 Low, delay of 4 seconds, GPIO45 High</p>
+<p>For Hard Resetting the modem, GPIO 60 is used. Following is the process:</p>
+<p>GPIO60 Low, delay 1 second, GPIO60 High</p>
+<p>GPIO60 should be high by default</p>
+<p>For Resetting the GPS module, GPIO50 is used. Following is the process:</p>
+<p>GPIO50 Low, delay 2 second, GPIO50 High</p>
+<p>GPIO50 should be high by default.</p>
+<p>Alternatively, Push button Switches can be used instead of GPIOs in similar cycles.</p>
+<p>Please refer to Application notes for more information.</p>
+<ul>
+<li><strong>What to do when the Modem hangs up ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> In cases when the Modem hangs up or its firmware stops responding to AT COMMANDS and cannot be turned OFF and then ON, Use Hard Reset.</p>
+<p>Hard reset is advised to be used in such cases only otherwise prefer soft resets for minor aberrations.</p>
+<ul>
+<li><strong>What is the process of resetting the GPS module ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> For reseting the GPS module, GPIO50 is used. Following is the process:</p>
+<p>GPIO50 low, delay 2 second, GPIO50 High</p>
+<p>GPIO50 should be high by default.</p>
+<p>Alternatively, push button switch can be used instead of GPIO in similar cycle.</p>
+<p>Please refer to Application notes for more information.</p>
+<ul>
+<li><strong>If I remove the SIM card while Cape is still ON and replace it with a new SIM card, what should be done next ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> You will need to restart the modem ( OFF ON cycle).</p>
+<ul>
+<li><strong>GPS module takes time to get GPS fix indoors, does the antenna need to be outdoors always ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Yes for best results, it is advised that GPS antennas be under open sky to get fast GPS Fix as per the hot start, warm start or cold start times. After GPS fix has been achieved, antenna can be moved indoors if required.</p>
+<ul>
+<li><strong>On my Modem+ GPS cape, is there a way that either of the modules be used selectively ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Yes , if you want that at some time only GPS module be used and not the Modem, you can either remove Power Jumper from the 5V supply or simply Turn the Modem OFF.</p>
+<p>Similarly, to use only the Modem alone and not the GPS modem , you can pull down the GPIO50 which controls the reset input of GPS module.</p>
+<ul>
+<li><strong>What is Power requirements of the cape ? How much Current is drawn by Modem and by GPS module ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Modem + GPS version of Cape in active mode requires around 2A @5V.</p>
+<p>Modem uses 1800mA@ 4V when data connection has been established and is being used.</p>
+<p>GPS Module draws upto 50mA @3.3V.</p>
+<p>Power usage values of Beaglebone black ranges 210-430 mA @5V as per its SRM.</p>
+<ul>
+<li><strong>What is the recommended ratings of Power adapter to use with Cape ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> It is recommended to use atleast a 2.5A 5V power adapter with our cape for complete utilisation of all the functions of Beaglebone Black and our cape.</p>
+<ul>
+<li><strong>What is the function of each LED ? What do they denote and how do they function under different conditions ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> D2 is power Led of Cape, which denotes the 5V power being provided to Cape and for the Modem.</p>
+<p>D7 is 3.3V power LED from the Beaglebone Black. This denotes 3.3V power for GPS module and other ICs on Cape.</p>
+<p>D5 is 1 PPS Fix led for the GPS module. It will blink at the rate of 1s, when GPS module has got its fix.</p>
+<p>D4 is Netlight/Signal Led for the Modem. It has different behaviours depending on the state of Modem.</p>
+<p>D3 is Status LED for the GPRS Modem. It gives the indication whether the GPRS Modem is on or not.</p>
+<ul>
+<li><strong>What are the functions of the different Switches ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> S1 is ON/OFF push button switch for the Modem.</p>
+<p>S2 is Hard Reset push Button switch for the Modem.</p>
+<p>S3 is Reset push button switch for the GPS module.</p>
+<p>S4 is 2 position DIP switch for specifying address for the EEPROM IC of cape on I2C2 bus of Beaglebone Black.</p>
+<ul>
+<li><strong>How to use the audio from the Modem ? </strong></li>
+</ul>
+<p><strong>Ans :</strong> Stereo audio/speaker and Mic ports are configured for the Modem. You need a surface mount type RJ9 4P4C connector to be mounted at P8 before a normal handset can be used.</p>
+<p>Following part is recommended : Molex 95503-6451</p>
+<ul>
+<li><strong>Which other capes are compatible with your cape ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to this document for a current list of frequently queried compatibility of capes with our versions of cape. This list is constantly updated on query basis.</p>
+<ul>
+<li><strong>Are there any extra Features on this cape ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> There is an Audio port available for use with the modem. The connector P8 needs to be mounted. (there is a four pin header P4 available outside of expansion header with UART2/I2C1 to possibly use with sensors or similar standalone applications)</p>
+<ul>
+<li><strong>Are there any different functioning modes for the Modem ? Can it go to sleep when idle ? How to wake it up when its idle ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> There are different functioning modes for GPRS modem. Please refer to application note on device enable for 2G capes here.</p>
+<ul>
+<li><strong>I used the USB cable to power on Beaglebone black with Cape on it, Beaglebone black did not boot properly, what is the issue?</strong></li>
+</ul>
+<p><strong>Ans:</strong> USB cable alone cannot provide sufficient power(only500mA max) to drive the Beaglebone Black and Cape together , that is why it did not boot properly. Use a power adapter of 2.5A,5V rating to properly boot Beaglebone black with our cape.</p>
+<ul>
+<li><strong>How to get in touch for an RMA ? What all information is required while applying for it ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to our Warranty, Return and Support policy here . You can also contact our support for any queries regarding the same.</p>
+<ul>
+<li><strong>How can I setup NTP server on beaglebone Black to use GPS data and PPS from GPS module of cape ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Please refer to Application note for GPS Location and NTP Synchronization in Debian Wheezy or Angstrom.</p>
+<ul>
+<li><strong>What is the meaning of data under different fields while querying NTP server information ?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Columns Defined:remote: peers speficified in the ntp.conf file* = current time source# = source selected, distance exceeds maximum valueo = source selected, Pulse Per Second (PPS) used+ = source selected, included in final setx = source false ticker. = source selected from end of candidate list- = source discarded by cluster algorithmblank = source discarded high stratum, failed sanity</p>
+<p>refid: remote source’s synchronization source</p>
+<p>stratum: stratum level of the source</p>
+<p>t: types availablel = local (such as a GPS, WWVB)u = unicast (most common)m = multicastb = broadcast- = netaddr</p>
+<p>when: number of seconds passed since last response</p>
+<p>poll: polling interval, in seconds, for source</p>
+<p>reach: indicates success/failure to reach source, 377 all attempts successful</p>
+<p>delay: indicates the roundtrip time, in milliseconds, to receive a reply</p>
+<p>offset: indicates the time difference, in milliseconds, between the client server and source</p>
+<p>disp/jitter: indicates the difference, in milliseconds, between two samples</p>
+<ul>
+<li><strong>Can the firmware of the modules be upgraded? Will there be any updates?</strong></li>
+</ul>
+<p><strong>Ans :</strong> Yes the firmware of the modules can be upgraded. But we have chosen not to keep that option open ended. If there is any issue with the firmware of the modules (modem or GPS), please contact our support.</p>
+<p>Trying to update or debug the firmware of the modules will likely be grounds for ceasing any support from us under warranty period.</p>
+<ul>
+<li><strong>Does this cape come with a C/C++ library for GPS module that can be used ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> We do not use any C/C++ library. In BBB, GPS NMEA data comes on UART4 ( /dev/ttyO4) in NMEA 0183 messages format. We don't support sample c code, since its reading a Uart,there are plenty GPS library that u can use, minicom show results in our examples.</p>
+<ul>
+<li><strong>Using 3G+GPS cape with your Debian image. I need to use the Beaglebone CAN controller which shares pins with UART1 how to stop UART1 being loaded at boot-time?</strong></li>
+</ul>
+<p><strong>Ans:</strong></p>
+<p>In the precompiled image provided by us a script runs as soon as the device is finished booting, configuring the related GPIOs and loading device tree overlays needed by our capes. Loading of device tree overlay for UART1 can be stopped in the following way : </p>
+<pre><code>    cd ~
+    nano boot_run.sh
+</code></pre>
+<p>Comment out the command for the "BB-UART1" overlay :</p>
+<pre><code>    /bin/echo BB-UART1 &gt; /sys/devices/bone_capemgr.9/
+</code></pre>
+<p>to look like</p>
+<pre><code>    #/bin/echo BB-UART1 &gt; /sys/devices/bone_capemgr.9/
+</code></pre>
+<p>Save and exit the script and then reboot again.</p>
+<p>You can also replace BB-UART1 by BB-DCAN1 in the script to automatically load the overlay for CAN after bootup.</p>
+<ul>
+<li><strong>Are VAYU-3GHP-A,VAYU-3GCPA,VAYU-3GHPB, compatible with using HDMI at the same time? </strong></li>
+</ul>
+<p><strong>Ans:</strong> Yes, our capes are fully compatible with Beaglebone Black, so HDMI will also work. We have tested our capes with Angstrom, Debian, Ubuntu and Android.</p>
+<ul>
+<li><strong>Does the cape accept a regular sim card with data plan?</strong></li>
+</ul>
+<p><strong>Ans:</strong> Yes our cape has a sim card slot which accepts a mini SIM-card (USIM for GSM/HSPA and RUIM for 3G CDMA). To establish a ppp data connection using the modem you will need to configure the wvdial or pppd files for the service provider of the SIM card inserted. Basically, you require Username, password and APN of the service provider to dial out a data connection.</p>
+<ul>
+<li>**When trying to enter <pre><code>#echo BB-UART4 &gt; /sys/devices/bone_capemgr.9/i get an error: 
+echo: Write error: file exists
+</code></pre>
+</li>
+</ul>
+<p>what to do ?**</p>
+<p><strong>Ans:</strong> In the pre-compiled image, UART4 is already called in the device tree after Beaglebone Black boots up by a script running in crontab. So, you do not need to issue</p>
+<pre><code>    #echo BB-UART4 &gt; /sys/devices/bone_capemgr.9/sl
+</code></pre>
+<p>again.</p>
+<p>Just check for "/dev/ttyO4" by issuing following command to ensure the same. ls /dev/ttyO*</p>
+<ul>
+<li><strong>Does Yantrr modem expect AT command lines to be entirely uppercase?</strong></li>
+</ul>
+<p><strong>Ans:</strong> The Modem takes both upper and lower case characters, but we would like to suggest to stick to uppercase for issuing AT commands. Both ttyUSB2 and ttyUSB0 can take AT commands but only ttyUSB0 is the data port for PPP connections.</p>
+<ul>
+<li><strong>I powered on the BeagleBone on 12V DC instead of 5V. The BeagleBone survived, but the 3G cape won't show as an USB device anymore,Is there any hope to repair the cape?</strong></li>
+</ul>
+<p><strong>Ans:</strong> Debug input power side, basically check the voltages on the input and output of the LDO. Visually if the LED D2 is not working, then LDO is blown</p>
+<ul>
+<li><strong>What is the use of the battery in GPS cape ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> The Battery is sold seperately, it is optional and needed only for "hot start" (time to first fix less than 2sec) of the GPS module. The GPS module will still function fully without it as well but will have a 20-30sec time to first fix.</p>
+<ul>
+<li><strong>Are there any indicators supposed to indicate traffic on 3G modem ?</strong></li>
+</ul>
+<p><strong>Ans:</strong> For the 3G modem LED, D4 is the Signal LED. It may be included and not enabled in your current cape, but it doesn't affect the functioning of the modem. Different blinking states of this LED indicate the status of the modem, which include these : a. Modem is turned off b. Modem is on and not connected to data network c. Modem is connected to data network</p>
+<ul>
+<li><strong>How is the USB output on the cape powered. Is it connected directly to the 5V power of the BeagleBone? </strong></li>
+</ul>
+<p><strong>Ans:</strong> VAYU capes have a self powered USB hub design whose one of the downstream ports is the extra USB host port available on the cape. The power distribution switch used for the USB hub uses VDD_5V i.e. the Beaglebone Black power input. This switch limits the maximum current on the downstream ports to 500mA. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2016-07-20 10:28:01.336501
+-->
